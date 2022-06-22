@@ -18,7 +18,7 @@ public class TodoServiceTest {
         todoRepository.save(todo1);
         TodoService todoService = new TodoService(todoRepository);
 
-        Todo lastTodo = todoService.findAll().get(todoService.findAll().size()-1);
+        Todo lastTodo = todoService.getAllTodos().get(todoService.getAllTodos().size() - 1);
 
         assertEquals(todo1.getTitle(), lastTodo.getTitle());
         assertEquals(todo1.getDescription(), lastTodo.getDescription());

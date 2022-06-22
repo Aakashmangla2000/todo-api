@@ -13,7 +13,8 @@ public class Todo {
     private String description;
     private String title;
 
-    public Todo(){}
+    public Todo() {
+    }
 
     public Todo(String title, String description, boolean completed) {
         this.title = title;
@@ -21,7 +22,7 @@ public class Todo {
         this.completed = completed;
     }
 
-    public Todo(Long id,String title, String description, boolean completed) {
+    public Todo(Long id, String title, String description, boolean completed) {
         this.id = id;
         this.title = title;
         this.description = description;
