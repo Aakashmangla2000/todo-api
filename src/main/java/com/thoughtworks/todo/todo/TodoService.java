@@ -17,6 +17,6 @@ public class TodoService {
     }
 
     public Todo addTodo(Todo todo) {
-        return todo;
+        return todoRepository.save(todo);
     }
 }
